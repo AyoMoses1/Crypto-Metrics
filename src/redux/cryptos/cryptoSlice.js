@@ -14,7 +14,6 @@ export const fetchCryptos = createAsyncThunk('books/fetchCryptos', async () => {
   return res;
 });
 
-
 const cryptoSlice = createSlice({
   name: 'cryptos',
   initialState,
