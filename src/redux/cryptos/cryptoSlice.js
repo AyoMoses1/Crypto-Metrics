@@ -3,6 +3,7 @@ import axios from 'axios';
 
 const initialState = {
   list: [],
+  fixed: [],
   details: {},
   isLoading: false,
 };
@@ -24,11 +25,20 @@ export const fetchCountryDetails = createAsyncThunk('books/fetchCountryDetails',
 const cryptoSlice = createSlice({
   name: 'cryptos',
   initialState,
-  reducers: {},
+  reducers: {
+    filterCountry: (state, action) => {
+      const newState = { ...state };
+      console.log(action.payload, 'action');
+      newState.list = state.fixed.filter((option) => option.country.includes(action.payload));
+      console.log(newState.list);
+      return newState;
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchCryptos.fulfilled, (state, action) => {
       const newState = { ...state };
-      newState.list = action.payload.slice(0, 50);
+      newState.list = action.payload;
+      newState.fixed = action.payload;
       return newState;
     });
     builder.addCase(fetchCountryDetails.fulfilled, (state, action) => {
@@ -39,4 +49,5 @@ const cryptoSlice = createSlice({
   },
 });
 
+export const { filterCountry } = cryptoSlice.actions;
 export default cryptoSlice.reducer;
