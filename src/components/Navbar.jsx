@@ -9,12 +9,10 @@ import { filterCountry } from '../redux/cryptos/cryptoSlice';
 
 const links = [
   { path: '/', text: 'Books' },
-  { path: 'details', text: 'Details' },
 ];
 
 const NavBar = () => {
   const [state, setState] = useState('');
-  console.log(state)
   const dispatch = useDispatch();
   const handleChange = (e) => {
     setState(e.target.value);

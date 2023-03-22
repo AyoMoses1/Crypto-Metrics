@@ -13,7 +13,7 @@ function Home() {
     <Container fluid>
       <Row className="justify-content-center">
         {state.map((coin) => (
-          <Col md={{ span: 3 }} sm={{ span: 6 }} key={coin.countryInfo.iso2} className="mb-4">
+          <Col md={{ span: 3 }} sm={{ span: 6 }} key={coin.country} className="mb-4">
             <Coin
               image={coin.countryInfo.flag}
               name={coin.country}
