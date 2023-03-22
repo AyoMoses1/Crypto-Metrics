@@ -1,5 +1,11 @@
 /* eslint-disable */
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from 'react-router-dom';
 
 
@@ -8,27 +14,34 @@ const links = [
   { path: 'details', text: 'Details' },
 ];
 
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <>
-      <nav>
-        <div>
-         Bookstore CMS
-        </div>
-        <ul>
-          {links.map((link) => (
-            <React.Fragment key={link.text}>
-              <li>
-                <NavLink to={link.path} >{link.text}</NavLink>
-              </li>
-            </React.Fragment>
-          ))}
-        </ul>
-        <div>
-          <i className="fa-solid fa-user"></i>
-        </div>
-      </nav>
-    </>
+    <Navbar bg="light" expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            {links.map((link) => (
+              <Nav.Link href={link.path}>{link.text}</Nav.Link>
+            ))}
+          </Nav>
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
-export default Navbar;
+export default NavBar;

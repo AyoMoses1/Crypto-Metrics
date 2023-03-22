@@ -9,7 +9,7 @@ const initialState = {
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 export const fetchCryptos = createAsyncThunk('books/fetchCryptos', async () => {
-  const response = await axios.get(`${BASE_URL}/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false`);
+  const response = await axios.get(`${BASE_URL}`);
   const res = response.data;
   return res;
 });
@@ -21,7 +21,7 @@ const cryptoSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(fetchCryptos.fulfilled, (state, action) => {
       const newState = { ...state };
-      newState.list = action.payload;
+      newState.list = action.payload.slice(0, 50);
       return newState;
     });
   },
