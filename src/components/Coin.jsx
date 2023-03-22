@@ -3,10 +3,12 @@ import Proptypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { useNavigate } from 'react-router-dom';
 
 function Coin({
   image, name, continent, cases, population,
 }) {
+  const navigate = useNavigate();
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={image} />
@@ -24,7 +26,7 @@ function Coin({
             {population}
           </ListGroup.Item>
         </ListGroup>
-        <Button variant="primary">View Details</Button>
+        <Button variant="primary" onClick={() => navigate('details', { state: name })}>View Details</Button>
       </Card.Body>
     </Card>
   );
