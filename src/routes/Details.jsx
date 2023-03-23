@@ -18,7 +18,7 @@ function Details() {
   }, []);
 
   return (
-    <Container>
+    <Container className="margin-top">
       <Row className="justify-content-center">
         <Col md={{ span: 4 }} sm={{ span: 12 }} className="mb-4">
           <Card>

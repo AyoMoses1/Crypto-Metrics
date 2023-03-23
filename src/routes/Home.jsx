@@ -8,9 +8,8 @@ import Coin from '../components/Coin';
 
 function Home() {
   const state = useSelector((state) => state.cryptoReducer.list);
-  console.log(state);
   return (
-    <Container fluid>
+    <Container fluid className="margin-top">
       <Row className="justify-content-center">
         {state.map((coin) => (
           <Col md={{ span: 3 }} sm={{ span: 6 }} key={coin.country} className="mb-4 columns">
