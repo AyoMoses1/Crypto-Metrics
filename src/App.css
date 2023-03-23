@@ -1,3 +1,20 @@
 * {
   margin: 0;
 }
+
+.icons-con {
+  display: flex;
+  align-items: center;
+}
+
+.icons-con i{
+  color: grey;
+  font-size: 24px;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+}
