@@ -32,7 +32,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Space Travellers Hub <a name="about-project"></a>
+# 📖 Covid Tracker <a name="about-project"></a>
 **Covid Tracker** is web application that shows the different list of countries statistics for COVID. This is a group project and it involves so many awesome features that you get to know more aout a you navigate through this readme file"
 
 ## 🛠 Built With <a name="built-with"></a>
