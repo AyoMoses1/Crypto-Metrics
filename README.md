@@ -53,9 +53,9 @@
 ### Key Features <a name="key-features"></a>
 
 
-- **[Book rockets and cancel rockets ]**
-- **[Join missions and leave missions]**
-- **[Display reserved rockets and joined missions]**
+- **[Renders a list of all available countries]**
+- **[Displays current population and number of covid cases for each country on the homepage]**
+- **[Show more details for a specific country when clicked]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,8 +63,7 @@
 ![big-tv-tv](https://user-images.githubusercontent.com/87722869/219645447-e069fa86-be8e-4372-8bee-c996a5ae5497.gif)
 
 
-https://space-travellers-hub-25do.onrender.com
-
+https://covidtracker-0xy8.onrender.com/
 
 
 
@@ -87,13 +86,13 @@ To get a local copy up and running, follow these steps.
 ### Setup
 
 Clone this repository to your desired folder:
-  https://github.com/AyoMoses1/Space-Travelers-Hub.git
+  https://github.com/AyoMoses1/Crypto-Metrics.git
 
  Example commands:
 
 ```sh
   cd my-folder
-  git clone  https://github.com/AyoMoses1/Space-Travelers-Hub.git
+  git clone  https://github.com/AyoMoses1/Crypto-Metrics.git
 ```
 
 ### Install
@@ -126,11 +125,7 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
-
-👤 **lenkon**
-
-- GitHub: [@lenkon](https://github.com/lenkon)
+## 👥 Author <a name="authors"></a>
 
 👤 **AyoMoses**
 
