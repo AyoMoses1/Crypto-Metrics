@@ -1,7 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import cryptoReducer from '../../../redux/cryptos/cryptoSlice';
-import { fetchCryptos } from './../../../redux/cryptos/cryptoSlice';
-
+import cryptoReducer, { fetchCryptos } from '../../../redux/cryptos/cryptoSlice';
 
 describe('CoinsSlice', () => {
   let store;
@@ -9,7 +7,7 @@ describe('CoinsSlice', () => {
   beforeEach(() => {
     store = configureStore({
       reducer: {
-        cryptoReducer
+        cryptoReducer,
       },
     });
   });
@@ -19,4 +17,3 @@ describe('CoinsSlice', () => {
     expect(store.getState().cryptoReducer.list.length).toEqual(0);
   });
 });
-

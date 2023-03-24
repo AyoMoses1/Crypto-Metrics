@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import { filterCountry } from '../redux/cryptos/cryptoSlice';
 
 const links = [
-  { path: '/', text: 'Books' },
+  { path: '/', text: 'Home' },
 ];
 
 const NavBar = () => {

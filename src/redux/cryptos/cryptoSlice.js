@@ -28,9 +28,7 @@ const cryptoSlice = createSlice({
   reducers: {
     filterCountry: (state, action) => {
       const newState = { ...state };
-      console.log(action.payload, 'action');
       newState.list = state.fixed.filter((option) => option.country.includes(action.payload));
-      console.log(newState.list);
       return newState;
     },
   },

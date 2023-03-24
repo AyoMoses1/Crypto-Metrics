@@ -17,6 +17,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [ Live Video](#live-video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -59,12 +60,16 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Video <a name="live-demo"></a>
 ![big-tv-tv](https://user-images.githubusercontent.com/87722869/219645447-e069fa86-be8e-4372-8bee-c996a5ae5497.gif)
 
+https://www.loom.com/share/2b15f7e1c81d4747922a09030bcc129a
 
 https://covidtracker-0xy8.onrender.com/
 
+
+## 🚀 Live Demo <a name="live-video"></a>
+https://covidtracker-0xy8.onrender.com/
 
 
 

@@ -15,7 +15,7 @@ function Details() {
 
   useEffect(() => {
     dispatch(fetchCountryDetails(state));
-  }, []);
+  }, [dispatch, state]);
 
   return (
     <Container className="margin-top">

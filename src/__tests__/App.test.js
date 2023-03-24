@@ -13,4 +13,4 @@ it('App component test', () => {
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
-  })
+});
