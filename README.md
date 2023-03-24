@@ -65,8 +65,6 @@
 
 https://www.loom.com/share/2b15f7e1c81d4747922a09030bcc129a
 
-https://covidtracker-0xy8.onrender.com/
-
 
 ## 🚀 Live Demo <a name="live-video"></a>
 https://covidtracker-0xy8.onrender.com/
