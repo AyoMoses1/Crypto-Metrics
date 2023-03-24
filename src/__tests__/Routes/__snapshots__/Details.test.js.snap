@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component test 1`] = `
+<div
+  className="margin-top container"
+>
+  <div
+    className="justify-content-center row"
+  >
+    <div
+      className="mb-4 col-md-4 col-sm-12"
+    >
+      <div
+        className="card"
+      >
+        <img
+          className="card-img"
+        />
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-header"
+          >
+            Statistics
+          </div>
+          <div
+            className="list-group list-group-flush"
+            onKeyDown={[Function]}
+          >
+            <div
+              className="list-group-item"
+              data-rr-ui-event-key={null}
+              onClick={[Function]}
+            >
+              Cases:
+            </div>
+            <div
+              className="list-group-item"
+              data-rr-ui-event-key={null}
+              onClick={[Function]}
+            >
+              Population:
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

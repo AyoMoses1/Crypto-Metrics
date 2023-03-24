@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component test 1`] = `
+<div
+  className="margin-top container-fluid"
+>
+  <div
+    className="justify-content-center row"
+  />
+</div>
+`;
