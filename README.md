@@ -164,7 +164,9 @@ If you like this project please give it a star and share it with your freinds
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to appreciate [Microverse](https://www.microverse.org/) for providing the resources and the platform for us to be a Professional full-stack developer.
+- I would like to appreciate [Microverse](https://www.microverse.org/) for providing the resources and the platform for us to be a Professional full-stack developer.
+- Much Appreciation to the Microverse code reviewers for their guidance.
+- Design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
