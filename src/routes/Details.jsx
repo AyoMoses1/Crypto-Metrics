@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
@@ -18,25 +19,29 @@ function Details() {
   }, [dispatch, state]);
 
   return (
-    <Container className="margin-top">
+    <Container fluid className="margin-top">
+      <div className='banner' style={{background: `url(${res?.countryInfo?.flag}`}}>
+        <h2>Covid Tracker</h2>
+        <p>Over 200views</p>
+      </div>
       <Row className="justify-content-center">
         <Col md={{ span: 4 }} sm={{ span: 12 }} className="mb-4">
-          <Card>
-            <Card.Img src={res?.countryInfo?.flag} />
-            <Card.Body>
-              <Card.Header>Statistics</Card.Header>
-              <ListGroup variant="flush">
-                <ListGroup.Item>
-                  Cases:
-                  {res?.cases}
-                </ListGroup.Item>
-                <ListGroup.Item>
-                  Population:
-                  {res?.population}
-                </ListGroup.Item>
-              </ListGroup>
-            </Card.Body>
-          </Card>
+          <div className='grid-list'>
+            <h4>Cases</h4>
+            <p>{res?.cases}</p>
+          </div>
+          <div className='grid-list'>
+            <h4>Deaths</h4>
+            <p>{res?.deaths}</p>
+          </div>
+          <div className='grid-list'>
+            <h4>Recovered</h4>
+            <p>{res?.recovered}</p>
+          </div>
+          <div className='grid-list'>
+            <h4>Population</h4>
+            <p>{res?.population}</p>
+          </div>
         </Col>
       </Row>
     </Container>
@@ -44,3 +49,4 @@ function Details() {
 }
 
 export default Details;
+

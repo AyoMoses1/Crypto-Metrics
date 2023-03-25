@@ -1,18 +1,21 @@
+/* eslint-disable*/
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Coin from '../components/Coin';
 
 function Home() {
   const state = useSelector((state) => state.cryptoReducer.list);
   return (
-    <Container fluid className="margin-top">
-      <Row className="justify-content-center">
+    <Container className="home-wrapper">
+      <div className='banner'>
+        <h2>Covid Tracker</h2>
+        <p>Over 200views</p>
+      </div>
+      <div className="grid-container justify-content-center">
         {state.map((coin) => (
-          <Col md={{ span: 3 }} sm={{ span: 6 }} key={coin.country} className="mb-4 columns">
+          <div key={coin.country} className="grid-item">
             <Coin
               image={coin.countryInfo.flag}
               name={coin.country}
@@ -20,9 +23,9 @@ function Home() {
               cases={coin.cases}
               population={coin.population}
             />
-          </Col>
+          </div>
         ))}
-      </Row>
+      </div>
     </Container>
   );
 }
