@@ -19,7 +19,7 @@ function Details() {
     <Container fluid className="margin-top">
       <Nav.Link href="/"><span style={{ color: '#fff' }}><i className="fa-solid fa-arrow-left" /></span></Nav.Link>
       <div className="banner" style={{ background: `url(${res?.countryInfo?.flag}` }}>
-        <h2>Covid Tracker</h2>
+        <h2>{res?.country}</h2>
         <p>Over 200views</p>
       </div>
       <Row className="justify-content-center">
