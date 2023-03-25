@@ -14,6 +14,18 @@ Array [
       >
         Navbar scroll
       </a>
+      <div
+        className="icons-con"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-microphone"
+        />
+        <i
+          aria-hidden="true"
+          className="fa fa-cog"
+        />
+      </div>
       <button
         aria-controls="navbarScroll"
         aria-label="Toggle navigation"
@@ -46,24 +58,12 @@ Array [
             href="/"
             onClick={[Function]}
           >
-            Books
+            Home
           </a>
         </div>
         <form
           className="d-flex"
         >
-          <div
-            className="icons-con"
-          >
-            <i
-              aria-hidden="true"
-              className="fa fa-microphone"
-            />
-            <i
-              aria-hidden="true"
-              className="fa fa-cog"
-            />
-          </div>
           <input
             aria-label="Search"
             className="me-2 form-control"
@@ -84,10 +84,20 @@ Array [
     </div>
   </nav>,
   <div
-    className="margin-top container-fluid"
+    className="home-wrapper container"
   >
     <div
-      className="justify-content-center row"
+      className="banner"
+    >
+      <h2>
+        Covid Tracker
+      </h2>
+      <p>
+        Over 200views
+      </p>
+    </div>
+    <div
+      className="grid-container justify-content-center"
     />
   </div>,
 ]

@@ -13,6 +13,18 @@ exports[`NavBar component test 1`] = `
     >
       Navbar scroll
     </a>
+    <div
+      className="icons-con"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-microphone"
+      />
+      <i
+        aria-hidden="true"
+        className="fa fa-cog"
+      />
+    </div>
     <button
       aria-controls="navbarScroll"
       aria-label="Toggle navigation"
@@ -45,24 +57,12 @@ exports[`NavBar component test 1`] = `
           href="/"
           onClick={[Function]}
         >
-          Books
+          Home
         </a>
       </div>
       <form
         className="d-flex"
       >
-        <div
-          className="icons-con"
-        >
-          <i
-            aria-hidden="true"
-            className="fa fa-microphone"
-          />
-          <i
-            aria-hidden="true"
-            className="fa fa-cog"
-          />
-        </div>
         <input
           aria-label="Search"
           className="me-2 form-control"
