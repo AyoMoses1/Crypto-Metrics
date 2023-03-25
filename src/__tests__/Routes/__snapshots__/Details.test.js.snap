@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component test 1`] = `
+<div
+  className="margin-top container-fluid"
+>
+  <a
+    className="nav-link"
+    disabled={false}
+    href="/"
+    onClick={[Function]}
+  >
+    <span
+      style={
+        Object {
+          "color": "#fff",
+        }
+      }
+    >
+      <i
+        className="fa-solid fa-arrow-left"
+      />
+    </span>
+  </a>
+  <div
+    className="banner"
+    style={
+      Object {
+        "background": "url(undefined",
+      }
+    }
+  >
+    <h2 />
+    <p>
+      Over 200views
+    </p>
+  </div>
+  <div
+    className="justify-content-center row"
+  >
+    <div
+      className="mb-4 col-md-4 col-sm-12"
+    >
+      <div
+        className="grid-list"
+      >
+        <h4>
+          Cases
+        </h4>
+        <p />
+      </div>
+      <div
+        className="grid-list"
+      >
+        <h4>
+          Deaths
+        </h4>
+        <p />
+      </div>
+      <div
+        className="grid-list"
+      >
+        <h4>
+          Recovered
+        </h4>
+        <p />
+      </div>
+      <div
+        className="grid-list"
+      >
+        <h4>
+          Population
+        </h4>
+        <p />
+      </div>
+    </div>
+  </div>
+</div>
+`;

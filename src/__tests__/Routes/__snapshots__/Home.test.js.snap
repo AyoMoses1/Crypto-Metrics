@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component test 1`] = `
+<div
+  className="home-wrapper container"
+>
+  <div
+    className="banner"
+  >
+    <h2>
+      Covid Tracker
+    </h2>
+    <p>
+      Over 200views
+    </p>
+  </div>
+  <div
+    className="grid-container justify-content-center"
+  />
+</div>
+`;
