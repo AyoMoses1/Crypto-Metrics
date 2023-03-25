@@ -22,6 +22,10 @@ const NavBar = () => {
     <Navbar bg="light" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <div className="icons-con">
+          <i className="fa fa-microphone" aria-hidden="true" />
+          <i className="fa fa-cog" aria-hidden="true" />
+        </div>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -34,10 +38,6 @@ const NavBar = () => {
             ))}
           </Nav>
           <Form className="d-flex">
-            <div className="icons-con">
-              <i className="fa fa-microphone" aria-hidden="true" />
-              <i className="fa fa-cog" aria-hidden="true" />
-            </div>
             <Form.Control
               type="search"
               placeholder="Search"

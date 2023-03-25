@@ -1,4 +1,3 @@
-/* eslint-disable*/
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useSelector } from 'react-redux';
@@ -9,7 +8,7 @@ function Home() {
   const state = useSelector((state) => state.cryptoReducer.list);
   return (
     <Container className="home-wrapper">
-      <div className='banner'>
+      <div className="banner">
         <h2>Covid Tracker</h2>
         <p>Over 200views</p>
       </div>
@@ -19,9 +18,7 @@ function Home() {
             <Coin
               image={coin.countryInfo.flag}
               name={coin.country}
-              continent={coin.continent}
               cases={coin.cases}
-              population={coin.population}
             />
           </div>
         ))}
