@@ -30,9 +30,7 @@ exports[`App component test 1`] = `
       }
     }
   >
-    <h2>
-      Covid Tracker
-    </h2>
+    <h2 />
     <p>
       Over 200views
     </p>
